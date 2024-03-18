@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e Codificador</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+</head>
+<body style="background-image: url('assets/fundo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+<main class="main container">
+    <h1>(Des)Codifique sua mensagem!</h1>
+
+    <div class="container-input">
+        <div class="input">
+            <textarea id="input-texto" placeholder="Digite o seu texto aqui:"></textarea>
+            <p>ATENÇÃO: Apenas com letras maiúsculas e sem acento.</p>
+        </div>
+
+        <div id="output">
+            <h2>Sua mensagem aparecerá aqui:</h2>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="container-bnt">
+            <button class="btn-criptografar custom-btn" onclick="criptografar()">Criptografar</button>
+            <button class="btn-descriptografar custom-btn" onclick="descriptografar()">Descriptografar</button>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <h3>Desenvolvido por Brenda Lima</h3>
+    </footer>
+</main>
+
+<script src="codifica.js"></script>
+
+</body>
+</html>

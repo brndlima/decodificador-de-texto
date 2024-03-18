@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+:root{
+    --corprincipal: #2E0259;
+    --corsegundaria:#A02AFA;
+    --cortitulo:#ffffff;
+}
+
+body{
+    background-image: url('assets/fundo.jpg');
+    background-size: cover; /* Para garantir que a imagem cubra todo o fundo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para impedir que a imagem se repita */
+    background-attachment: fixed; /* Para fixar a imagem enquanto a página é rolada */
+
+    
+}
+
+*{
+    margin: 2%;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+.cabecalho img{
+    max-width:70px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+}
+
+.main.container h1 {
+    color: var(--cortitulo); /* Altere para a cor desejada */
+}
+
+
+.container-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input{
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto{
+    width: 345px;
+    height: 330px;
+    font-size: 15px;
+    color: var(--corsegundaria);
+    background: none;
+    box-shadow: none;
+    border-radius: 20px;
+    border: 3px solid var(--corsegundaria);
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+    
+
+#output{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--corsegundaria);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+}
+
+#output h2{
+    text-align: left;
+    font-size: 15px;
+    color: var(--corsegundaria);
+    font-style: normal;
+}
+
+#output span{
+    font-size: 16px;
+    text-align: center;
+}
+
+#output img{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.container-bnt button{
+    border: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #7c0160;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar{
+    border: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #7c0160;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+
+
+.custom-btn {
+    border: 2px;
+    border-radius: 10px;
+    background-color: var(--corprincipal);
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/*.container-bnt:hover{
+    border: 2px solid var(--corprincipal); /* Cor da borda ao passar o mouse 
+    background-color: var(--corprincipal); /* Cor de fundo ao passar o mouse 
+    color: #fff; /* Cor do texto ao passar o mouse 
+    transition: 0.5s all;
+}*/
+
+.custom-btn:hover {
+    background-color: var(--corsegundaria); /* Altere para a cor desejada */
+    border-color: var(--corprincipal);
+}
+
+.rodape{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 5px; /* Adicione uma margem superior maior conforme necessário */
+    background: var(--corprincipal);
+    color: var(--cortitulo);
+    font-size: small;
+    text-align: center;
+}
+
+.rodape h3{
+    font-size: 16px;
+}
+
+.icons ion-icon{
+    width: 25px;
+    height: 25px;
+    color: var(--cortitulo);
+}
+
+.icons ion-icon:hover{
+    color: var(--corsegundaria);
+}
